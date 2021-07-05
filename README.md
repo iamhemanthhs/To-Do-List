@@ -9,6 +9,9 @@ Simple To-Do list with MongoDB Atlas as database.
 
 Hemanth H S(https://github.com/iamhemanthhs)
 
+## Screenshots:
+![Alt text](/relative/path/to/Screenshot.png?raw=true "Optional Title")
+
 ## Tools Used:
 - HTML
 - CSS
