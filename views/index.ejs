@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>ToDo List</title>
+</head>
+
+<body>
+<div class="box" id="heading">
+<h1><%= htoday %></h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+<form  action="/delete" method="post">
+  <div class="box">
+    <% for (let i=0; i<hlists.length; i++){ %>
+
+    <div class="item">
+        <input type="checkbox" name="checkbox" value=<%= hlists[i].id %>  onChange="this.form.submit()" >
+        <p><%= hlists[i].name %></p>
+        </div>
+      <% } %>
+</form>
+
+
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autofocus autocomplete="off">
+
+      <button type="submit" name="button">+</button>
+
+    </form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
